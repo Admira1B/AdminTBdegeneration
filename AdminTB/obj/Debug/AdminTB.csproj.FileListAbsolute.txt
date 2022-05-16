@@ -1,0 +1,12 @@
+D:\MamaImaprogram\Code\AdminTBdegeneration\AdminTB\obj\Debug\AdminTB.csproj.AssemblyReference.cache
+D:\MamaImaprogram\Code\AdminTBdegeneration\AdminTB\obj\Debug\AdminTB.csproj.SuggestedBindingRedirects.cache
+D:\MamaImaprogram\Code\AdminTBdegeneration\AdminTB\obj\Debug\AdminTB.LoginForm.resources
+D:\MamaImaprogram\Code\AdminTBdegeneration\AdminTB\obj\Debug\AdminTB.Properties.Resources.resources
+D:\MamaImaprogram\Code\AdminTBdegeneration\AdminTB\obj\Debug\AdminTB.csproj.GenerateResource.cache
+D:\MamaImaprogram\Code\AdminTBdegeneration\AdminTB\obj\Debug\AdminTB.csproj.CoreCompileInputs.cache
+D:\MamaImaprogram\Code\AdminTBdegeneration\AdminTB\bin\Debug\AdminTB.exe.config
+D:\MamaImaprogram\Code\AdminTBdegeneration\AdminTB\bin\Debug\AdminTB.exe
+D:\MamaImaprogram\Code\AdminTBdegeneration\AdminTB\bin\Debug\AdminTB.pdb
+D:\MamaImaprogram\Code\AdminTBdegeneration\AdminTB\obj\Debug\AdminTB.exe
+D:\MamaImaprogram\Code\AdminTBdegeneration\AdminTB\obj\Debug\AdminTB.pdb
+D:\MamaImaprogram\Code\AdminTBdegeneration\AdminTB\obj\Debug\AdminTB.SignUpForm.resources
