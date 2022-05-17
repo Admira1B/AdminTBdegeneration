@@ -10,3 +10,14 @@ D:\MamaImaprogram\Code\AdminTBdegeneration\AdminTB\bin\Debug\AdminTB.pdb
 D:\MamaImaprogram\Code\AdminTBdegeneration\AdminTB\obj\Debug\AdminTB.exe
 D:\MamaImaprogram\Code\AdminTBdegeneration\AdminTB\obj\Debug\AdminTB.pdb
 D:\MamaImaprogram\Code\AdminTBdegeneration\AdminTB\obj\Debug\AdminTB.SignUpForm.resources
+C:\Users\reyzenbuk.105s1\Desktop\AdminTBdegeneration\AdminTB\bin\Debug\AdminTB.exe.config
+C:\Users\reyzenbuk.105s1\Desktop\AdminTBdegeneration\AdminTB\bin\Debug\AdminTB.exe
+C:\Users\reyzenbuk.105s1\Desktop\AdminTBdegeneration\AdminTB\bin\Debug\AdminTB.pdb
+C:\Users\reyzenbuk.105s1\Desktop\AdminTBdegeneration\AdminTB\obj\Debug\AdminTB.csproj.AssemblyReference.cache
+C:\Users\reyzenbuk.105s1\Desktop\AdminTBdegeneration\AdminTB\obj\Debug\AdminTB.LoginForm.resources
+C:\Users\reyzenbuk.105s1\Desktop\AdminTBdegeneration\AdminTB\obj\Debug\AdminTB.Properties.Resources.resources
+C:\Users\reyzenbuk.105s1\Desktop\AdminTBdegeneration\AdminTB\obj\Debug\AdminTB.SignUpForm.resources
+C:\Users\reyzenbuk.105s1\Desktop\AdminTBdegeneration\AdminTB\obj\Debug\AdminTB.csproj.GenerateResource.cache
+C:\Users\reyzenbuk.105s1\Desktop\AdminTBdegeneration\AdminTB\obj\Debug\AdminTB.csproj.CoreCompileInputs.cache
+C:\Users\reyzenbuk.105s1\Desktop\AdminTBdegeneration\AdminTB\obj\Debug\AdminTB.exe
+C:\Users\reyzenbuk.105s1\Desktop\AdminTBdegeneration\AdminTB\obj\Debug\AdminTB.pdb

@@ -9,7 +9,7 @@ namespace AdminTB
 {
     class DataBase
     {
-        SqlConnection sqlConnection = new SqlConnection(@"Data Source = 10.0.22.5; Initial Catalog = ARM_TB; User ID = ARM_TB; Password = 1234ABCd");
+        SqlConnection sqlConnection = new SqlConnection(@"Data Source=10.0.22.5;Initial Catalog=ARM_TB;Persist Security Info=True;User ID=ARM_TB;Password=1234ABCd");
 
         public void openConnection()
         {

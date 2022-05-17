@@ -7,11 +7,14 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Data.SqlClient;
 
 namespace AdminTB
 {
     public partial class LoginForm : Form
     {
+        DataBase database = new DataBase();
+
         public LoginForm()
         {
             InitializeComponent();
@@ -43,6 +46,31 @@ namespace AdminTB
             PasswordTextBox.UseSystemPasswordChar = false;
             VisiblePassword.Visible = true;
             UnvisiblePassword.Visible = false;
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            var loginUser = LogInTextBox.Text;
+            var passwordUser = PasswordTextBox.Text;
+
+            SqlDataAdapter adapter = new SqlDataAdapter();
+            DataTable table = new DataTable();
+
+            string queryAutorization = $"select id_user, login_user, password_user from register where login_user = '{loginUser}' and password_user = '{passwordUser}'";
+
+            SqlCommand command = new SqlCommand(queryAutorization, database.GetConnection());
+
+            adapter.SelectCommand = command;
+            adapter.Fill(table);
+
+            if (table.Rows.Count == 1)
+            {
+                MessageBox.Show("Вы успешно вошли!", "Успешно!", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            }
+            else
+            {
+                MessageBox.Show("Такого аккаунта не существует!", "Аккаунта не существует!", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+            }
         }
     }
 }
