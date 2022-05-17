@@ -47,37 +47,42 @@
             // NewAccount
             // 
             this.NewAccount.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F);
-            this.NewAccount.Location = new System.Drawing.Point(344, 307);
+            this.NewAccount.Location = new System.Drawing.Point(258, 249);
+            this.NewAccount.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.NewAccount.Name = "NewAccount";
-            this.NewAccount.Size = new System.Drawing.Size(154, 63);
+            this.NewAccount.Size = new System.Drawing.Size(116, 51);
             this.NewAccount.TabIndex = 13;
             this.NewAccount.Text = "Создать";
             this.NewAccount.UseVisualStyleBackColor = true;
+            this.NewAccount.Click += new System.EventHandler(this.NewAccount_Click);
             // 
             // PasswordTextBox
             // 
             this.PasswordTextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F);
-            this.PasswordTextBox.Location = new System.Drawing.Point(273, 231);
+            this.PasswordTextBox.Location = new System.Drawing.Point(205, 188);
+            this.PasswordTextBox.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.PasswordTextBox.Name = "PasswordTextBox";
-            this.PasswordTextBox.Size = new System.Drawing.Size(343, 38);
+            this.PasswordTextBox.Size = new System.Drawing.Size(258, 32);
             this.PasswordTextBox.TabIndex = 12;
             this.PasswordTextBox.UseSystemPasswordChar = true;
             // 
             // LogInTextBox
             // 
             this.LogInTextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F);
-            this.LogInTextBox.Location = new System.Drawing.Point(273, 168);
+            this.LogInTextBox.Location = new System.Drawing.Point(205, 136);
+            this.LogInTextBox.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.LogInTextBox.Name = "LogInTextBox";
-            this.LogInTextBox.Size = new System.Drawing.Size(343, 38);
+            this.LogInTextBox.Size = new System.Drawing.Size(258, 32);
             this.LogInTextBox.TabIndex = 11;
             // 
             // PasswordLabel
             // 
             this.PasswordLabel.AutoSize = true;
             this.PasswordLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.PasswordLabel.Location = new System.Drawing.Point(146, 231);
+            this.PasswordLabel.Location = new System.Drawing.Point(110, 188);
+            this.PasswordLabel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.PasswordLabel.Name = "PasswordLabel";
-            this.PasswordLabel.Size = new System.Drawing.Size(121, 32);
+            this.PasswordLabel.Size = new System.Drawing.Size(95, 26);
             this.PasswordLabel.TabIndex = 10;
             this.PasswordLabel.Text = "Пароль:";
             // 
@@ -85,9 +90,10 @@
             // 
             this.LogInLabel.AutoSize = true;
             this.LogInLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.LogInLabel.Location = new System.Drawing.Point(166, 171);
+            this.LogInLabel.Location = new System.Drawing.Point(124, 139);
+            this.LogInLabel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.LogInLabel.Name = "LogInLabel";
-            this.LogInLabel.Size = new System.Drawing.Size(101, 32);
+            this.LogInLabel.Size = new System.Drawing.Size(78, 26);
             this.LogInLabel.TabIndex = 9;
             this.LogInLabel.Text = "Логин:";
             // 
@@ -95,18 +101,20 @@
             // 
             this.Registration.AutoSize = true;
             this.Registration.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.Registration.Location = new System.Drawing.Point(126, 38);
+            this.Registration.Location = new System.Drawing.Point(94, 31);
+            this.Registration.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.Registration.Name = "Registration";
-            this.Registration.Size = new System.Drawing.Size(270, 46);
+            this.Registration.Size = new System.Drawing.Size(205, 37);
             this.Registration.TabIndex = 8;
             this.Registration.Text = "Регистрация";
             // 
             // UserSignUp
             // 
             this.UserSignUp.Image = global::AdminTB.Properties.Resources.SignUp;
-            this.UserSignUp.Location = new System.Drawing.Point(12, 12);
+            this.UserSignUp.Location = new System.Drawing.Point(9, 10);
+            this.UserSignUp.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.UserSignUp.Name = "UserSignUp";
-            this.UserSignUp.Size = new System.Drawing.Size(98, 98);
+            this.UserSignUp.Size = new System.Drawing.Size(74, 80);
             this.UserSignUp.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.UserSignUp.TabIndex = 7;
             this.UserSignUp.TabStop = false;
@@ -114,9 +122,10 @@
             // EraserPictBtn
             // 
             this.EraserPictBtn.Image = global::AdminTB.Properties.Resources.Eraser;
-            this.EraserPictBtn.Location = new System.Drawing.Point(741, 38);
+            this.EraserPictBtn.Location = new System.Drawing.Point(556, 31);
+            this.EraserPictBtn.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.EraserPictBtn.Name = "EraserPictBtn";
-            this.EraserPictBtn.Size = new System.Drawing.Size(47, 46);
+            this.EraserPictBtn.Size = new System.Drawing.Size(35, 37);
             this.EraserPictBtn.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.EraserPictBtn.TabIndex = 14;
             this.EraserPictBtn.TabStop = false;
@@ -125,9 +134,10 @@
             // VisiblePassword
             // 
             this.VisiblePassword.Image = global::AdminTB.Properties.Resources.Visible;
-            this.VisiblePassword.Location = new System.Drawing.Point(622, 231);
+            this.VisiblePassword.Location = new System.Drawing.Point(466, 188);
+            this.VisiblePassword.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.VisiblePassword.Name = "VisiblePassword";
-            this.VisiblePassword.Size = new System.Drawing.Size(40, 38);
+            this.VisiblePassword.Size = new System.Drawing.Size(30, 31);
             this.VisiblePassword.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.VisiblePassword.TabIndex = 15;
             this.VisiblePassword.TabStop = false;
@@ -136,9 +146,10 @@
             // UnvisiblePassword
             // 
             this.UnvisiblePassword.Image = global::AdminTB.Properties.Resources.Unvisible;
-            this.UnvisiblePassword.Location = new System.Drawing.Point(622, 231);
+            this.UnvisiblePassword.Location = new System.Drawing.Point(466, 188);
+            this.UnvisiblePassword.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.UnvisiblePassword.Name = "UnvisiblePassword";
-            this.UnvisiblePassword.Size = new System.Drawing.Size(40, 38);
+            this.UnvisiblePassword.Size = new System.Drawing.Size(30, 31);
             this.UnvisiblePassword.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.UnvisiblePassword.TabIndex = 16;
             this.UnvisiblePassword.TabStop = false;
@@ -146,9 +157,9 @@
             // 
             // SignUpForm
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(600, 366);
             this.Controls.Add(this.UnvisiblePassword);
             this.Controls.Add(this.EraserPictBtn);
             this.Controls.Add(this.NewAccount);
@@ -159,6 +170,7 @@
             this.Controls.Add(this.Registration);
             this.Controls.Add(this.UserSignUp);
             this.Controls.Add(this.VisiblePassword);
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Name = "SignUpForm";
             this.Text = "SignUpForm";
             ((System.ComponentModel.ISupportInitialize)(this.UserSignUp)).EndInit();

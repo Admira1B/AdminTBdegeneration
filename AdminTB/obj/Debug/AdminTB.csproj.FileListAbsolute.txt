@@ -21,3 +21,5 @@ C:\Users\reyzenbuk.105s1\Desktop\AdminTBdegeneration\AdminTB\obj\Debug\AdminTB.c
 C:\Users\reyzenbuk.105s1\Desktop\AdminTBdegeneration\AdminTB\obj\Debug\AdminTB.csproj.CoreCompileInputs.cache
 C:\Users\reyzenbuk.105s1\Desktop\AdminTBdegeneration\AdminTB\obj\Debug\AdminTB.exe
 C:\Users\reyzenbuk.105s1\Desktop\AdminTBdegeneration\AdminTB\obj\Debug\AdminTB.pdb
+C:\Users\reyzenbuk.105s1\Desktop\AdminTBdegeneration\AdminTB\obj\Debug\AdminTB.ListContarcts.resources
+C:\Users\reyzenbuk.105s1\Desktop\AdminTBdegeneration\AdminTB\obj\Debug\AdminTB.MainPage.resources

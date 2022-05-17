@@ -15,6 +15,7 @@ namespace AdminTB
         public MainPage()
         {
             InitializeComponent();
+            StartPosition = FormStartPosition.CenterScreen;
         }
 
         private void списокToolStripMenuItem_Click(object sender, EventArgs e)

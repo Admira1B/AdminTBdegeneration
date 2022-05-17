@@ -66,6 +66,10 @@ namespace AdminTB
             if (table.Rows.Count == 1)
             {
                 MessageBox.Show("Вы успешно вошли!", "Успешно!", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                MainPage mainPage = new MainPage();
+                this.Hide();
+                mainPage.ShowDialog();
+
             }
             else
             {
