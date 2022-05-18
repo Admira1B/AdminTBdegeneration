@@ -28,32 +28,32 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.DataGridContracts = new System.Windows.Forms.DataGridView();
             this.NumberContracts = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.IDVacationer = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.IDHouse = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Term = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.PaymentMethod = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Results = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.DataGridContracts)).BeginInit();
             this.SuspendLayout();
             // 
-            // dataGridView1
+            // DataGridContracts
             // 
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.DataGridContracts.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.DataGridContracts.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.NumberContracts,
             this.IDVacationer,
             this.IDHouse,
             this.Term,
             this.PaymentMethod,
             this.Results});
-            this.dataGridView1.Location = new System.Drawing.Point(0, 0);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.RowHeadersWidth = 51;
-            this.dataGridView1.RowTemplate.Height = 24;
-            this.dataGridView1.Size = new System.Drawing.Size(800, 407);
-            this.dataGridView1.TabIndex = 1;
+            this.DataGridContracts.Location = new System.Drawing.Point(0, 0);
+            this.DataGridContracts.Name = "DataGridContracts";
+            this.DataGridContracts.RowHeadersWidth = 51;
+            this.DataGridContracts.RowTemplate.Height = 24;
+            this.DataGridContracts.Size = new System.Drawing.Size(800, 407);
+            this.DataGridContracts.TabIndex = 1;
             // 
             // NumberContracts
             // 
@@ -101,17 +101,17 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.Controls.Add(this.dataGridView1);
+            this.Controls.Add(this.DataGridContracts);
             this.Name = "ListContarcts";
             this.Size = new System.Drawing.Size(800, 407);
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.DataGridContracts)).EndInit();
             this.ResumeLayout(false);
 
         }
 
         #endregion
 
-        private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.DataGridView DataGridContracts;
         private System.Windows.Forms.DataGridViewTextBoxColumn NumberContracts;
         private System.Windows.Forms.DataGridViewTextBoxColumn IDVacationer;
         private System.Windows.Forms.DataGridViewTextBoxColumn IDHouse;
