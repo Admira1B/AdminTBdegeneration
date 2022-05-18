@@ -28,28 +28,28 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.DataGridServices = new System.Windows.Forms.DataGridView();
+            this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.CodeServices = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Name = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.DiscriptonServ = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.NameServices = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.DescriptionServices = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Price = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            ((System.ComponentModel.ISupportInitialize)(this.DataGridServices)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
-            // DataGridServices
+            // dataGridView1
             // 
-            this.DataGridServices.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.DataGridServices.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.CodeServices,
-            this.Name,
-            this.DiscriptonServ,
+            this.NameServices,
+            this.DescriptionServices,
             this.Price});
-            this.DataGridServices.Location = new System.Drawing.Point(0, 0);
-            this.DataGridServices.Name = "DataGridServices";
-            this.DataGridServices.RowHeadersWidth = 51;
-            this.DataGridServices.RowTemplate.Height = 24;
-            this.DataGridServices.Size = new System.Drawing.Size(800, 407);
-            this.DataGridServices.TabIndex = 3;
+            this.dataGridView1.Location = new System.Drawing.Point(0, 0);
+            this.dataGridView1.Name = "dataGridView1";
+            this.dataGridView1.RowHeadersWidth = 51;
+            this.dataGridView1.RowTemplate.Height = 24;
+            this.dataGridView1.Size = new System.Drawing.Size(800, 407);
+            this.dataGridView1.TabIndex = 0;
             // 
             // CodeServices
             // 
@@ -58,19 +58,19 @@
             this.CodeServices.Name = "CodeServices";
             this.CodeServices.Width = 125;
             // 
-            // Name
+            // NameServices
             // 
-            this.Name.HeaderText = "Название";
-            this.Name.MinimumWidth = 6;
-            this.Name.Name = "Name";
-            this.Name.Width = 125;
+            this.NameServices.HeaderText = "Название";
+            this.NameServices.MinimumWidth = 6;
+            this.NameServices.Name = "NameServices";
+            this.NameServices.Width = 125;
             // 
-            // DiscriptonServ
+            // DescriptionServices
             // 
-            this.DiscriptonServ.HeaderText = "Описание";
-            this.DiscriptonServ.MinimumWidth = 6;
-            this.DiscriptonServ.Name = "DiscriptonServ";
-            this.DiscriptonServ.Width = 125;
+            this.DescriptionServices.HeaderText = "Описание";
+            this.DescriptionServices.MinimumWidth = 6;
+            this.DescriptionServices.Name = "DescriptionServices";
+            this.DescriptionServices.Width = 125;
             // 
             // Price
             // 
@@ -83,20 +83,20 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.Controls.Add(this.DataGridServices);
+            this.Controls.Add(this.dataGridView1);
             this.Name = "ListServices";
             this.Size = new System.Drawing.Size(800, 407);
-            ((System.ComponentModel.ISupportInitialize)(this.DataGridServices)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);
 
         }
 
         #endregion
 
-        private System.Windows.Forms.DataGridView DataGridServices;
+        private System.Windows.Forms.DataGridView dataGridView1;
         private System.Windows.Forms.DataGridViewTextBoxColumn CodeServices;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Name;
-        private System.Windows.Forms.DataGridViewTextBoxColumn DiscriptonServ;
+        private System.Windows.Forms.DataGridViewTextBoxColumn NameServices;
+        private System.Windows.Forms.DataGridViewTextBoxColumn DescriptionServices;
         private System.Windows.Forms.DataGridViewTextBoxColumn Price;
     }
 }
