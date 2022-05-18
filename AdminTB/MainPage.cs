@@ -24,5 +24,40 @@ namespace AdminTB
             MainPanel.Controls.Clear();
             MainPanel.Controls.Add(listcontractspanel);
         }
+
+        private void списокToolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+            ListVacationers listvacationerspanel = new ListVacationers();
+            MainPanel.Controls.Clear();
+            MainPanel.Controls.Add(listvacationerspanel);
+        }
+
+        private void домаToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            ListHouses listhousespanel = new ListHouses();
+            MainPanel.Controls.Clear();
+            MainPanel.Controls.Add(listhousespanel);
+        }
+
+        private void экскурсииToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            ListExcursions listexcursionspanel = new ListExcursions();
+            MainPanel.Controls.Clear();
+            MainPanel.Controls.Add(listexcursionspanel);
+        }
+
+        private void дополнительныеУслугиToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            ListServices listservicespanel = new ListServices();
+            MainPanel.Controls.Clear();
+            MainPanel.Controls.Add(listservicespanel);
+        }
+
+        private void сотрудникиToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            ListEmployees listemployeespanel = new ListEmployees();
+            MainPanel.Controls.Clear();
+            MainPanel.Controls.Add(listemployeespanel);
+        }
     }
 }

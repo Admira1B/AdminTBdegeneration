@@ -53,6 +53,36 @@
     <Compile Include="ListContarcts.Designer.cs">
       <DependentUpon>ListContarcts.cs</DependentUpon>
     </Compile>
+    <Compile Include="ListEmployees.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ListEmployees.Designer.cs">
+      <DependentUpon>ListEmployees.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ListExcursions.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ListExcursions.Designer.cs">
+      <DependentUpon>ListExcursions.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ListHouses.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ListHouses.Designer.cs">
+      <DependentUpon>ListHouses.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ListServices.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ListServices.Designer.cs">
+      <DependentUpon>ListServices.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ListVacationers.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ListVacationers.Designer.cs">
+      <DependentUpon>ListVacationers.cs</DependentUpon>
+    </Compile>
     <Compile Include="LoginForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -67,6 +97,12 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="RegistrationContracts.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="RegistrationContracts.Designer.cs">
+      <DependentUpon>RegistrationContracts.cs</DependentUpon>
+    </Compile>
     <Compile Include="SignUpForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -75,6 +111,21 @@
     </Compile>
     <EmbeddedResource Include="ListContarcts.resx">
       <DependentUpon>ListContarcts.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ListEmployees.resx">
+      <DependentUpon>ListEmployees.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ListExcursions.resx">
+      <DependentUpon>ListExcursions.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ListHouses.resx">
+      <DependentUpon>ListHouses.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ListServices.resx">
+      <DependentUpon>ListServices.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ListVacationers.resx">
+      <DependentUpon>ListVacationers.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="LoginForm.resx">
       <DependentUpon>LoginForm.cs</DependentUpon>
@@ -92,6 +143,9 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
+    <EmbeddedResource Include="RegistrationContracts.resx">
+      <DependentUpon>RegistrationContracts.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="SignUpForm.resx">
       <DependentUpon>SignUpForm.cs</DependentUpon>
     </EmbeddedResource>
