@@ -7,14 +7,63 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Data.SqlClient;
 
 namespace AdminTB
 {
+
+    enum RowState 
+    {
+        Existed,
+        New,
+        Modified,
+        ModifiedNew,
+        Deleted
+    }
+
     public partial class ListExcursions : UserControl
     {
+        DataBase dataBase = new DataBase();
+
         public ListExcursions()
         {
             InitializeComponent();
+            
+            CreateColomns();
+            RefreshDataGrid(DataGridExcursions);
+        }
+
+        private void CreateColomns()
+        {
+            DataGridExcursions.Columns.Add("excursionId", "№");
+            DataGridExcursions.Columns.Add("[content]", "Описание");
+            DataGridExcursions.Columns.Add("price", "Стоимость");
+            DataGridExcursions.Columns.Add("place", "Место проведения");
+        }
+
+        private void ReadSingleRow(DataGridView dgv, IDataRecord record)
+        {
+            dgv.Rows.Add(record.GetInt32(0), record.GetString(1), record.GetInt32(2), record.GetString(3));
+        }
+
+        private void RefreshDataGrid(DataGridView dgv)
+        {
+            dgv.Rows.Clear();
+
+            string queryShow = $"select * from excursion";
+
+            SqlCommand command = new SqlCommand(queryShow, dataBase.GetConnection());
+
+            dataBase.GetConnection();
+            dataBase.openConnection();
+
+            SqlDataReader reader = command.ExecuteReader();
+
+            while (reader.Read())
+            {
+                ReadSingleRow(dgv, reader);            
+            }
+            reader.Close();
         }
     }
 }

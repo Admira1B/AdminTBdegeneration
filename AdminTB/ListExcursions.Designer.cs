@@ -29,81 +29,29 @@
         private void InitializeComponent()
         {
             this.DataGridExcursions = new System.Windows.Forms.DataGridView();
-            this.NumberExcursions = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.IDEmployee = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.DiscriptonEx = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Price = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Date = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Place = new System.Windows.Forms.DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)(this.DataGridExcursions)).BeginInit();
             this.SuspendLayout();
             // 
             // DataGridExcursions
             // 
+            this.DataGridExcursions.AllowUserToAddRows = false;
             this.DataGridExcursions.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.DataGridExcursions.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.NumberExcursions,
-            this.IDEmployee,
-            this.DiscriptonEx,
-            this.Price,
-            this.Date,
-            this.Place});
             this.DataGridExcursions.Location = new System.Drawing.Point(0, 0);
+            this.DataGridExcursions.Margin = new System.Windows.Forms.Padding(2);
             this.DataGridExcursions.Name = "DataGridExcursions";
             this.DataGridExcursions.RowHeadersWidth = 51;
             this.DataGridExcursions.RowTemplate.Height = 24;
-            this.DataGridExcursions.Size = new System.Drawing.Size(800, 407);
+            this.DataGridExcursions.Size = new System.Drawing.Size(600, 331);
             this.DataGridExcursions.TabIndex = 2;
-            // 
-            // NumberExcursions
-            // 
-            this.NumberExcursions.HeaderText = "№";
-            this.NumberExcursions.MinimumWidth = 6;
-            this.NumberExcursions.Name = "NumberExcursions";
-            this.NumberExcursions.Width = 125;
-            // 
-            // IDEmployee
-            // 
-            this.IDEmployee.HeaderText = "ID";
-            this.IDEmployee.MinimumWidth = 6;
-            this.IDEmployee.Name = "IDEmployee";
-            this.IDEmployee.Width = 125;
-            // 
-            // DiscriptonEx
-            // 
-            this.DiscriptonEx.HeaderText = "Описание";
-            this.DiscriptonEx.MinimumWidth = 6;
-            this.DiscriptonEx.Name = "DiscriptonEx";
-            this.DiscriptonEx.Width = 125;
-            // 
-            // Price
-            // 
-            this.Price.HeaderText = "Стоимость";
-            this.Price.MinimumWidth = 6;
-            this.Price.Name = "Price";
-            this.Price.Width = 125;
-            // 
-            // Date
-            // 
-            this.Date.HeaderText = "Дата";
-            this.Date.MinimumWidth = 6;
-            this.Date.Name = "Date";
-            this.Date.Width = 125;
-            // 
-            // Place
-            // 
-            this.Place.HeaderText = "Место проведения";
-            this.Place.MinimumWidth = 6;
-            this.Place.Name = "Place";
-            this.Place.Width = 125;
             // 
             // ListExcursions
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.Controls.Add(this.DataGridExcursions);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "ListExcursions";
-            this.Size = new System.Drawing.Size(800, 407);
+            this.Size = new System.Drawing.Size(600, 331);
             ((System.ComponentModel.ISupportInitialize)(this.DataGridExcursions)).EndInit();
             this.ResumeLayout(false);
 
@@ -112,11 +60,5 @@
         #endregion
 
         private System.Windows.Forms.DataGridView DataGridExcursions;
-        private System.Windows.Forms.DataGridViewTextBoxColumn NumberExcursions;
-        private System.Windows.Forms.DataGridViewTextBoxColumn IDEmployee;
-        private System.Windows.Forms.DataGridViewTextBoxColumn DiscriptonEx;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Price;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Date;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Place;
     }
 }

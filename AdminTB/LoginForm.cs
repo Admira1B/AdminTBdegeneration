@@ -56,7 +56,7 @@ namespace AdminTB
             SqlDataAdapter adapter = new SqlDataAdapter();
             DataTable table = new DataTable();
 
-            string queryAutorization = $"select id_user, login_user, password_user from register where login_user = '{loginUser}' and password_user = '{passwordUser}'";
+            string queryAutorization = $"select id_user, login_user, password_user from auntification where login_user = '{loginUser}' and password_user = '{passwordUser}'";
 
             SqlCommand command = new SqlCommand(queryAutorization, database.GetConnection());
 

@@ -46,7 +46,7 @@ namespace AdminTB
             var login = LogInTextBox.Text;
             var password = PasswordTextBox.Text;
 
-            string queryRegistration = $"insert into register(login_user, password_user) values('{login}','{password}')";
+            string queryRegistration = $"insert into auntification(login_user, password_user) values('{login}','{password}')";
 
             SqlCommand command = new SqlCommand(queryRegistration, database.GetConnection());
 
@@ -73,7 +73,7 @@ namespace AdminTB
             SqlDataAdapter adapter = new SqlDataAdapter();
             DataTable dataTable = new DataTable();
 
-            string queryCheck = $"select * from register where login_user = '{loginUser}' and password_user = '{passUser}'";
+            string queryCheck = $"select * from auntification where login_user = '{loginUser}' and password_user = '{passUser}'";
 
             SqlCommand command = new SqlCommand(queryCheck, database.GetConnection());
 
