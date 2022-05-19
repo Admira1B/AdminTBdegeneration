@@ -11,16 +11,6 @@ using System.Data.SqlClient;
 
 namespace AdminTB
 {
-
-    enum RowState 
-    {
-        Existed,
-        New,
-        Modified,
-        ModifiedNew,
-        Deleted
-    }
-
     public partial class ListExcursions : UserControl
     {
         DataBase dataBase = new DataBase();
@@ -29,11 +19,11 @@ namespace AdminTB
         {
             InitializeComponent();
             
-            CreateColomns();
+            CreateColumns();
             RefreshDataGrid(DataGridExcursions);
         }
 
-        private void CreateColomns()
+        private void CreateColumns()
         {
             DataGridExcursions.Columns.Add("excursionId", "№");
             DataGridExcursions.Columns.Add("[content]", "Описание");
