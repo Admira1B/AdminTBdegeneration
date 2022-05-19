@@ -40,6 +40,7 @@
             this.VisiblePassword = new System.Windows.Forms.PictureBox();
             this.UnvisiblePassword = new System.Windows.Forms.PictureBox();
             this.CloseButtonLinkLabel = new System.Windows.Forms.LinkLabel();
+            this.Back = new System.Windows.Forms.LinkLabel();
             ((System.ComponentModel.ISupportInitialize)(this.UserSignUp)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.EraserPictBtn)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.VisiblePassword)).BeginInit();
@@ -168,11 +169,26 @@
             this.CloseButtonLinkLabel.VisitedLinkColor = System.Drawing.Color.Red;
             this.CloseButtonLinkLabel.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.CloseButtonLinkLabel_LinkClicked);
             // 
+            // Back
+            // 
+            this.Back.AutoSize = true;
+            this.Back.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.Back.LinkColor = System.Drawing.Color.Gray;
+            this.Back.Location = new System.Drawing.Point(345, 391);
+            this.Back.Name = "Back";
+            this.Back.Size = new System.Drawing.Size(152, 22);
+            this.Back.TabIndex = 18;
+            this.Back.TabStop = true;
+            this.Back.Text = "Вернуться назад";
+            this.Back.VisitedLinkColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.Back.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.Back_LinkClicked);
+            // 
             // SignUpForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.Back);
             this.Controls.Add(this.CloseButtonLinkLabel);
             this.Controls.Add(this.UnvisiblePassword);
             this.Controls.Add(this.EraserPictBtn);
@@ -213,5 +229,6 @@
         private System.Windows.Forms.PictureBox VisiblePassword;
         private System.Windows.Forms.PictureBox UnvisiblePassword;
         private System.Windows.Forms.LinkLabel CloseButtonLinkLabel;
+        private System.Windows.Forms.LinkLabel Back;
     }
 }

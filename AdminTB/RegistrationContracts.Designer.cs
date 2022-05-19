@@ -40,12 +40,15 @@
             this.IdVacationerTextBox = new System.Windows.Forms.TextBox();
             this.NumberHouseTextBox = new System.Windows.Forms.TextBox();
             this.CodeServicesTextBox = new System.Windows.Forms.TextBox();
+            this.TermTextBox = new System.Windows.Forms.TextBox();
+            this.PaymentMethodTextBox = new System.Windows.Forms.TextBox();
+            this.AddContractsButton = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // LabelNumberContracts
             // 
             this.LabelNumberContracts.AutoSize = true;
-            this.LabelNumberContracts.Location = new System.Drawing.Point(62, 39);
+            this.LabelNumberContracts.Location = new System.Drawing.Point(125, 39);
             this.LabelNumberContracts.Name = "LabelNumberContracts";
             this.LabelNumberContracts.Size = new System.Drawing.Size(87, 16);
             this.LabelNumberContracts.TabIndex = 0;
@@ -54,7 +57,7 @@
             // NumberHouseLabel
             // 
             this.NumberHouseLabel.AutoSize = true;
-            this.NumberHouseLabel.Location = new System.Drawing.Point(62, 132);
+            this.NumberHouseLabel.Location = new System.Drawing.Point(125, 123);
             this.NumberHouseLabel.Name = "NumberHouseLabel";
             this.NumberHouseLabel.Size = new System.Drawing.Size(58, 16);
             this.NumberHouseLabel.TabIndex = 1;
@@ -63,7 +66,7 @@
             // TermLabel
             // 
             this.TermLabel.AutoSize = true;
-            this.TermLabel.Location = new System.Drawing.Point(62, 210);
+            this.TermLabel.Location = new System.Drawing.Point(125, 210);
             this.TermLabel.Name = "TermLabel";
             this.TermLabel.Size = new System.Drawing.Size(130, 16);
             this.TermLabel.TabIndex = 2;
@@ -72,7 +75,7 @@
             // IdVacationerLabel
             // 
             this.IdVacationerLabel.AutoSize = true;
-            this.IdVacationerLabel.Location = new System.Drawing.Point(469, 39);
+            this.IdVacationerLabel.Location = new System.Drawing.Point(501, 39);
             this.IdVacationerLabel.Name = "IdVacationerLabel";
             this.IdVacationerLabel.Size = new System.Drawing.Size(112, 16);
             this.IdVacationerLabel.TabIndex = 3;
@@ -81,7 +84,7 @@
             // CodeServicesLabel
             // 
             this.CodeServicesLabel.AutoSize = true;
-            this.CodeServicesLabel.Location = new System.Drawing.Point(469, 132);
+            this.CodeServicesLabel.Location = new System.Drawing.Point(501, 123);
             this.CodeServicesLabel.Name = "CodeServicesLabel";
             this.CodeServicesLabel.Size = new System.Drawing.Size(109, 16);
             this.CodeServicesLabel.TabIndex = 4;
@@ -90,7 +93,7 @@
             // PaymentMethodLabel
             // 
             this.PaymentMethodLabel.AutoSize = true;
-            this.PaymentMethodLabel.Location = new System.Drawing.Point(469, 210);
+            this.PaymentMethodLabel.Location = new System.Drawing.Point(501, 210);
             this.PaymentMethodLabel.Name = "PaymentMethodLabel";
             this.PaymentMethodLabel.Size = new System.Drawing.Size(106, 16);
             this.PaymentMethodLabel.TabIndex = 5;
@@ -99,7 +102,7 @@
             // ResultsLabel
             // 
             this.ResultsLabel.AutoSize = true;
-            this.ResultsLabel.Location = new System.Drawing.Point(318, 295);
+            this.ResultsLabel.Location = new System.Drawing.Point(322, 299);
             this.ResultsLabel.Name = "ResultsLabel";
             this.ResultsLabel.Size = new System.Drawing.Size(38, 16);
             this.ResultsLabel.TabIndex = 6;
@@ -107,43 +110,69 @@
             // 
             // ResultsTextBox
             // 
-            this.ResultsTextBox.Location = new System.Drawing.Point(321, 314);
+            this.ResultsTextBox.Location = new System.Drawing.Point(325, 318);
             this.ResultsTextBox.Name = "ResultsTextBox";
             this.ResultsTextBox.Size = new System.Drawing.Size(142, 22);
             this.ResultsTextBox.TabIndex = 7;
             // 
             // NumberContractTextBox
             // 
-            this.NumberContractTextBox.Location = new System.Drawing.Point(65, 58);
+            this.NumberContractTextBox.Location = new System.Drawing.Point(128, 58);
             this.NumberContractTextBox.Name = "NumberContractTextBox";
             this.NumberContractTextBox.Size = new System.Drawing.Size(142, 22);
             this.NumberContractTextBox.TabIndex = 8;
             // 
             // IdVacationerTextBox
             // 
-            this.IdVacationerTextBox.Location = new System.Drawing.Point(472, 58);
+            this.IdVacationerTextBox.Location = new System.Drawing.Point(504, 58);
             this.IdVacationerTextBox.Name = "IdVacationerTextBox";
             this.IdVacationerTextBox.Size = new System.Drawing.Size(142, 22);
             this.IdVacationerTextBox.TabIndex = 9;
             // 
             // NumberHouseTextBox
             // 
-            this.NumberHouseTextBox.Location = new System.Drawing.Point(65, 151);
+            this.NumberHouseTextBox.Location = new System.Drawing.Point(128, 142);
             this.NumberHouseTextBox.Name = "NumberHouseTextBox";
             this.NumberHouseTextBox.Size = new System.Drawing.Size(142, 22);
             this.NumberHouseTextBox.TabIndex = 10;
             // 
             // CodeServicesTextBox
             // 
-            this.CodeServicesTextBox.Location = new System.Drawing.Point(472, 151);
+            this.CodeServicesTextBox.Location = new System.Drawing.Point(504, 142);
             this.CodeServicesTextBox.Name = "CodeServicesTextBox";
             this.CodeServicesTextBox.Size = new System.Drawing.Size(142, 22);
             this.CodeServicesTextBox.TabIndex = 11;
+            // 
+            // TermTextBox
+            // 
+            this.TermTextBox.Location = new System.Drawing.Point(128, 229);
+            this.TermTextBox.Name = "TermTextBox";
+            this.TermTextBox.Size = new System.Drawing.Size(142, 22);
+            this.TermTextBox.TabIndex = 12;
+            // 
+            // PaymentMethodTextBox
+            // 
+            this.PaymentMethodTextBox.Location = new System.Drawing.Point(504, 229);
+            this.PaymentMethodTextBox.Name = "PaymentMethodTextBox";
+            this.PaymentMethodTextBox.Size = new System.Drawing.Size(142, 22);
+            this.PaymentMethodTextBox.TabIndex = 13;
+            // 
+            // AddContractsButton
+            // 
+            this.AddContractsButton.Location = new System.Drawing.Point(325, 346);
+            this.AddContractsButton.Name = "AddContractsButton";
+            this.AddContractsButton.Size = new System.Drawing.Size(142, 35);
+            this.AddContractsButton.TabIndex = 14;
+            this.AddContractsButton.Text = "Оформить";
+            this.AddContractsButton.UseVisualStyleBackColor = true;
             // 
             // RegistrationContracts
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.Controls.Add(this.AddContractsButton);
+            this.Controls.Add(this.PaymentMethodTextBox);
+            this.Controls.Add(this.TermTextBox);
             this.Controls.Add(this.CodeServicesTextBox);
             this.Controls.Add(this.NumberHouseTextBox);
             this.Controls.Add(this.IdVacationerTextBox);
@@ -177,5 +206,8 @@
         private System.Windows.Forms.TextBox IdVacationerTextBox;
         private System.Windows.Forms.TextBox NumberHouseTextBox;
         private System.Windows.Forms.TextBox CodeServicesTextBox;
+        private System.Windows.Forms.TextBox TermTextBox;
+        private System.Windows.Forms.TextBox PaymentMethodTextBox;
+        private System.Windows.Forms.Button AddContractsButton;
     }
 }

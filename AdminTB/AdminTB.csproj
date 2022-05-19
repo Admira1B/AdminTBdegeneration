@@ -103,6 +103,12 @@
     <Compile Include="RegistrationContracts.Designer.cs">
       <DependentUpon>RegistrationContracts.cs</DependentUpon>
     </Compile>
+    <Compile Include="RegistrationVacationers.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="RegistrationVacationers.Designer.cs">
+      <DependentUpon>RegistrationVacationers.cs</DependentUpon>
+    </Compile>
     <Compile Include="SignUpForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -145,6 +151,9 @@
     </Compile>
     <EmbeddedResource Include="RegistrationContracts.resx">
       <DependentUpon>RegistrationContracts.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RegistrationVacationers.resx">
+      <DependentUpon>RegistrationVacationers.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="SignUpForm.resx">
       <DependentUpon>SignUpForm.cs</DependentUpon>

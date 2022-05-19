@@ -110,5 +110,11 @@ namespace AdminTB
         {
             LastPoint = new Point(e.X, e.Y);
         }
+
+        private void Back_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            this.Show();
+            //ПРОВЕРИТЬ НА РАБОТОСПОСОБНОСТЬ
+        }
     }
 }
