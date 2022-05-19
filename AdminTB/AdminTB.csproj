@@ -166,6 +166,7 @@
     <None Include="images\LogIn.png" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="images\AdminTB3.ico" />
     <Content Include="images\Eraser.png" />
     <Content Include="images\SignUp.png" />
     <Content Include="images\Unvisible.png" />
