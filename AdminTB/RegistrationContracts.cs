@@ -16,5 +16,9 @@ namespace AdminTB
         {
             InitializeComponent();
         }
+
+        private void AddContractsButton_Click(object sender, EventArgs e)
+        {
+        }
     }
 }

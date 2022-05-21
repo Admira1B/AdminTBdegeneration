@@ -79,5 +79,19 @@ namespace AdminTB
         {
             LastPoint = new Point(e.X, e.Y);
         }
+
+        private void оформитьToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            RegistrationContracts registrationcontractspanel = new RegistrationContracts();
+            MainPanel.Controls.Clear();
+            MainPanel.Controls.Add(registrationcontractspanel);
+        }
+
+        private void добавитьToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            RegistrationVacationers registrationvacationerspanel = new RegistrationVacationers();
+            MainPanel.Controls.Clear();
+            MainPanel.Controls.Add(registrationvacationerspanel);
+        }
     }
 }
