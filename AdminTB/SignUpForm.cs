@@ -113,8 +113,9 @@ namespace AdminTB
 
         private void Back_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
-            this.Show();
-            //ПРОВЕРИТЬ НА РАБОТОСПОСОБНОСТЬ
+            LoginForm frm_log = new LoginForm();
+            frm_log.Show();
+            this.Hide();
         }
     }
 }

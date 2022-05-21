@@ -34,9 +34,11 @@
             // 
             // DataGridHouses
             // 
+            this.DataGridHouses.AllowUserToAddRows = false;
+            this.DataGridHouses.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.DataGridHouses.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.DataGridHouses.Location = new System.Drawing.Point(0, 0);
-            this.DataGridHouses.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.DataGridHouses.Margin = new System.Windows.Forms.Padding(2);
             this.DataGridHouses.Name = "DataGridHouses";
             this.DataGridHouses.RowHeadersWidth = 51;
             this.DataGridHouses.RowTemplate.Height = 24;
@@ -48,7 +50,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.Controls.Add(this.DataGridHouses);
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "ListHouses";
             this.Size = new System.Drawing.Size(600, 331);
             ((System.ComponentModel.ISupportInitialize)(this.DataGridHouses)).EndInit();

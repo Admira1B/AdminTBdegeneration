@@ -36,23 +36,36 @@ namespace AdminTB
             DataGridContracts.Columns.Add("touristId", "ID отдыхающего");
             DataGridContracts.Columns.Add("houseId", "№ дома");
             DataGridContracts.Columns.Add("ADP_id", "ID доп.услуги");
-            DataGridContracts.Columns.Add("date", "Дата оформления");
-            DataGridContracts.Columns.Add("dateEnd", "Дата окончания");
+            DataGridContracts.Columns.Add("count", "Кол-во дней");
             DataGridContracts.Columns.Add("sumPay", "Сумма к оплате");
             DataGridContracts.Columns.Add("paymentMethod", "Способ оплаты");
         }
 
         private void ReadSingleRow(DataGridView dgv, IDataRecord record)
         {
-            dgv.Rows.Add(record.GetInt32(0), record.GetInt32(1), record.GetInt32(2), record.GetInt32(3), record.GetString(4), record.GetString(5), record.GetInt32(6), record.GetString(7));
+            dgv.Rows.Add(record.GetInt32(0), record.GetInt32(1), record.GetInt32(2), record.GetInt32(3), record.GetInt32(4), record.GetInt32(5), record.GetString(6));
         }
 
         private void RefreshDataGrid(DataGridView dgv)
         {
             dgv.Rows.Clear();
 
-            string queryShow = $"select agreementOfRentH.agreementNum, agreementOfRentH.touristId, agreementOfRentH.houseId, agreementOfRentH.ADP_id, agreementOfRentH.date, agreementOfRentH.dateEnd, , agreementOfRentH.paymentMethod from agreementOfRentH inner join AgreementADP on agreementOfRentH.agreementNum = AgreementADP.agreementNum additionalPayServise inner join AgreementADP on additionalPayServise.ADP_id = AgreementADP.ADP_id";
+            string queryShow = $"select " +
+                $"agreementOfRentH.agreementNum, " +
+                $"agreementOfRentH.touristId, " +
+                $"agreementOfRentH.houseId, " +
+                $"AdditionalPayServise.ADP_id, " +
+                $"agreementOfRentH.count, " +
+                $"(additionalPayServise.price + typeOfHouse.price) * agreementOfRentH.count," +
+                $"agreementOfRentH.paymentMethod " +
+                $"from agreementOfRentH " +
+                $"inner join AgreementADP on agreementOfRentH.agreementNum = AgreementADP.agreementNum  "+
+                $"inner join additionalPayServise on additionalPayServise.ADP_id = AgreementADP.ADP_id " +
+                $"inner join House on House.houseId = agreementOfRentH.houseId " +
+                $"inner join TypeOfHouse on TypeOfHouse.typeId = House.typeId ";
 
+            
+           
             SqlCommand command = new SqlCommand(queryShow, dataBase.GetConnection());
 
             dataBase.GetConnection();

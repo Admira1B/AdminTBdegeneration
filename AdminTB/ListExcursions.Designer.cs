@@ -35,6 +35,7 @@
             // DataGridExcursions
             // 
             this.DataGridExcursions.AllowUserToAddRows = false;
+            this.DataGridExcursions.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.DataGridExcursions.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.DataGridExcursions.Location = new System.Drawing.Point(0, 0);
             this.DataGridExcursions.Margin = new System.Windows.Forms.Padding(2);

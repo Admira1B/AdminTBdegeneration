@@ -27,18 +27,20 @@ namespace AdminTB
             DataGridHouses.Columns.Add("typeHouse", "Тип дома");
             DataGridHouses.Columns.Add("descriptionOfHouse", "Описание");
             DataGridHouses.Columns.Add("numOfRooms", "Кол-во комнат");
+            DataGridHouses.Columns.Add("price", "Цена");
         }
 
         private void ReadSingleRow(DataGridView dgv, IDataRecord record)
         {
-            dgv.Rows.Add(record.GetInt32(0), record.GetString(1), record.GetString(2), record.GetString(3));
+            dgv.Rows.Add(record.GetInt32(0), record.GetString(1), record.GetString(2), record.GetInt32(3), record.GetInt32(4));
         }
 
         private void RefreshDataGrid(DataGridView dgv)
         {
             dgv.Rows.Clear();
 
-            string queryShow = $"select house.houseId, typeOfHouse.typeHouse, typeOfHouse.descriptionOfHouse, typeOfHouse.numOfRooms from house inner join typeOfHouse on house.typeId = typeOfHouse.typeId";
+            string queryShow = $"select house.houseId, typeOfHouse.typeHouse, typeOfHouse.descriptionOfHouse, typeOfHouse.numOfRooms,  typeOfHouse.price " +
+                $"from house inner join typeOfHouse on house.typeId = typeOfHouse.typeId";
 
             SqlCommand command = new SqlCommand(queryShow, dataBase.GetConnection());
 

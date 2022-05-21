@@ -18,7 +18,6 @@ namespace AdminTB
         public ListExcursions()
         {
             InitializeComponent();
-            
             CreateColumns();
             RefreshDataGrid(DataGridExcursions);
         }
@@ -29,18 +28,19 @@ namespace AdminTB
             DataGridExcursions.Columns.Add("[content]", "Описание");
             DataGridExcursions.Columns.Add("price", "Стоимость");
             DataGridExcursions.Columns.Add("place", "Место проведения");
+            DataGridExcursions.Columns.Add("secondName", "Экскурсовод");
         }
 
         private void ReadSingleRow(DataGridView dgv, IDataRecord record)
         {
-            dgv.Rows.Add(record.GetInt32(0), record.GetString(1), record.GetInt32(2), record.GetString(3));
+            dgv.Rows.Add(record.GetInt32(0), record.GetString(1), record.GetInt32(2), record.GetString(3), record.GetString(4));
         }
 
         private void RefreshDataGrid(DataGridView dgv)
         {
             dgv.Rows.Clear();
 
-            string queryShow = $"select * from excursion";
+            string queryShow = $"select Excursion.excursionId, Excursion.[content], Excursion.price, Excursion.place, Employee.secondName from Excursion inner join Employee on Employee.employeeId = Excursion.employeeId";
 
             SqlCommand command = new SqlCommand(queryShow, dataBase.GetConnection());
 

@@ -34,9 +34,11 @@
             // 
             // DataGridVacationers
             // 
+            this.DataGridVacationers.AllowUserToAddRows = false;
+            this.DataGridVacationers.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.DataGridVacationers.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.DataGridVacationers.Location = new System.Drawing.Point(0, 0);
-            this.DataGridVacationers.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.DataGridVacationers.Margin = new System.Windows.Forms.Padding(2);
             this.DataGridVacationers.Name = "DataGridVacationers";
             this.DataGridVacationers.RowHeadersWidth = 51;
             this.DataGridVacationers.RowTemplate.Height = 24;
@@ -48,7 +50,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.Controls.Add(this.DataGridVacationers);
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "ListVacationers";
             this.Size = new System.Drawing.Size(600, 331);
             ((System.ComponentModel.ISupportInitialize)(this.DataGridVacationers)).EndInit();

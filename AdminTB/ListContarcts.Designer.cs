@@ -34,9 +34,10 @@
             // 
             // DataGridContracts
             // 
+            this.DataGridContracts.AllowUserToAddRows = false;
             this.DataGridContracts.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.DataGridContracts.Location = new System.Drawing.Point(0, 0);
-            this.DataGridContracts.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.DataGridContracts.Margin = new System.Windows.Forms.Padding(2);
             this.DataGridContracts.Name = "DataGridContracts";
             this.DataGridContracts.RowHeadersWidth = 51;
             this.DataGridContracts.RowTemplate.Height = 24;
@@ -48,7 +49,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.Controls.Add(this.DataGridContracts);
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "ListContarcts";
             this.Size = new System.Drawing.Size(600, 331);
             ((System.ComponentModel.ISupportInitialize)(this.DataGridContracts)).EndInit();

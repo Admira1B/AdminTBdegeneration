@@ -34,9 +34,11 @@
             // 
             // dataGridService
             // 
+            this.dataGridService.AllowUserToAddRows = false;
+            this.dataGridService.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dataGridService.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridService.Location = new System.Drawing.Point(0, 0);
-            this.dataGridService.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.dataGridService.Margin = new System.Windows.Forms.Padding(2);
             this.dataGridService.Name = "dataGridService";
             this.dataGridService.RowHeadersWidth = 51;
             this.dataGridService.RowTemplate.Height = 24;
@@ -48,7 +50,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.Controls.Add(this.dataGridService);
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "ListServices";
             this.Size = new System.Drawing.Size(600, 331);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridService)).EndInit();
