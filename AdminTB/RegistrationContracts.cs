@@ -19,6 +19,7 @@ namespace AdminTB
 
         private void AddContractsButton_Click(object sender, EventArgs e)
         {
+
         }
     }
 }

@@ -43,8 +43,12 @@ namespace AdminTB
             if (command.ExecuteNonQuery() == 1)
             {
                 MessageBox.Show("Отдыхающий был успешно зарегестрирован!", "Успешно!", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                ListVacationers listVacationers = new ListVacationers();
-                //CДЕЛАЙ ТУТ ПЖ показ пустой штуки
+                SurnameTextBox.Text = "";
+                FirstNameTextBox.Text = "";
+                PhoneTextBox.Text = "";
+                NumberPassportTextBox.Text = "";
+                SeriesPassportTextBox.Text = "";
+
             }
             else
             {
