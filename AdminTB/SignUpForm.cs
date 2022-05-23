@@ -14,6 +14,7 @@ namespace AdminTB
     public partial class SignUpForm : Form
     {
         DataBase database = new DataBase();
+        Hash hash = new Hash();
 
         public SignUpForm()
         {
@@ -44,7 +45,8 @@ namespace AdminTB
         private void NewAccount_Click(object sender, EventArgs e)
         {
             var login = LogInTextBox.Text;
-            var password = PasswordTextBox.Text;
+            var password = hash.GetHash(PasswordTextBox.Text);
+
 
             SqlDataAdapter adapter = new SqlDataAdapter();
             DataTable dataTable = new DataTable();

@@ -46,6 +46,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Hash.cs" />
     <Compile Include="DataBase.cs" />
     <Compile Include="ListContarcts.cs">
       <SubType>UserControl</SubType>

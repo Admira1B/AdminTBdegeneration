@@ -35,6 +35,7 @@
             // DataGridContracts
             // 
             this.DataGridContracts.AllowUserToAddRows = false;
+            this.DataGridContracts.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.DataGridContracts.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.DataGridContracts.Location = new System.Drawing.Point(0, 0);
             this.DataGridContracts.Margin = new System.Windows.Forms.Padding(2);

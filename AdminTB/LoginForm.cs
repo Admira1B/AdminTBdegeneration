@@ -14,6 +14,7 @@ namespace AdminTB
     public partial class LoginForm : Form
     {
         DataBase database = new DataBase();
+        Hash hash = new Hash();
 
         public LoginForm()
         {
@@ -51,7 +52,7 @@ namespace AdminTB
         private void button1_Click(object sender, EventArgs e)
         {
             var loginUser = LogInTextBox.Text;
-            var passwordUser = PasswordTextBox.Text;
+            var passwordUser = hash.GetHash(PasswordTextBox.Text);
 
             SqlDataAdapter adapter = new SqlDataAdapter();
             DataTable table = new DataTable();
