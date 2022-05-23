@@ -33,8 +33,6 @@
             this.IdVacationerLabel = new System.Windows.Forms.Label();
             this.CodeServicesLabel = new System.Windows.Forms.Label();
             this.PaymentMethodLabel = new System.Windows.Forms.Label();
-            this.ResultsLabel = new System.Windows.Forms.Label();
-            this.ResultsTextBox = new System.Windows.Forms.TextBox();
             this.IdVacationerTextBox = new System.Windows.Forms.TextBox();
             this.NumberHouseTextBox = new System.Windows.Forms.TextBox();
             this.CodeServicesTextBox = new System.Windows.Forms.TextBox();
@@ -92,24 +90,6 @@
             this.PaymentMethodLabel.Size = new System.Drawing.Size(84, 13);
             this.PaymentMethodLabel.TabIndex = 5;
             this.PaymentMethodLabel.Text = "Способ оплаты";
-            // 
-            // ResultsLabel
-            // 
-            this.ResultsLabel.AutoSize = true;
-            this.ResultsLabel.Location = new System.Drawing.Point(242, 243);
-            this.ResultsLabel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.ResultsLabel.Name = "ResultsLabel";
-            this.ResultsLabel.Size = new System.Drawing.Size(31, 13);
-            this.ResultsLabel.TabIndex = 6;
-            this.ResultsLabel.Text = "Итог";
-            // 
-            // ResultsTextBox
-            // 
-            this.ResultsTextBox.Location = new System.Drawing.Point(244, 258);
-            this.ResultsTextBox.Margin = new System.Windows.Forms.Padding(2);
-            this.ResultsTextBox.Name = "ResultsTextBox";
-            this.ResultsTextBox.Size = new System.Drawing.Size(108, 20);
-            this.ResultsTextBox.TabIndex = 7;
             // 
             // IdVacationerTextBox
             // 
@@ -172,8 +152,6 @@
             this.Controls.Add(this.CodeServicesTextBox);
             this.Controls.Add(this.NumberHouseTextBox);
             this.Controls.Add(this.IdVacationerTextBox);
-            this.Controls.Add(this.ResultsTextBox);
-            this.Controls.Add(this.ResultsLabel);
             this.Controls.Add(this.PaymentMethodLabel);
             this.Controls.Add(this.CodeServicesLabel);
             this.Controls.Add(this.IdVacationerLabel);
@@ -193,8 +171,6 @@
         private System.Windows.Forms.Label IdVacationerLabel;
         private System.Windows.Forms.Label CodeServicesLabel;
         private System.Windows.Forms.Label PaymentMethodLabel;
-        private System.Windows.Forms.Label ResultsLabel;
-        private System.Windows.Forms.TextBox ResultsTextBox;
         private System.Windows.Forms.TextBox IdVacationerTextBox;
         private System.Windows.Forms.TextBox NumberHouseTextBox;
         private System.Windows.Forms.TextBox CodeServicesTextBox;

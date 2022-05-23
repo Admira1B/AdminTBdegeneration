@@ -36,7 +36,7 @@ namespace AdminTB
             DataGridContracts.Columns.Add("touristId", "ID отдыхающего");
             DataGridContracts.Columns.Add("houseId", "№ дома");
             DataGridContracts.Columns.Add("ADP_id", "ID доп.услуги");
-            DataGridContracts.Columns.Add("count", "Кол-во дней");
+            DataGridContracts.Columns.Add("term", "Кол-во дней");
             DataGridContracts.Columns.Add("sumPay", "Сумма к оплате");
             DataGridContracts.Columns.Add("paymentMethod", "Способ оплаты");
         }
@@ -55,12 +55,11 @@ namespace AdminTB
                 $"agreementOfRentH.touristId, " +
                 $"agreementOfRentH.houseId, " +
                 $"AdditionalPayServise.ADP_id, " +
-                $"agreementOfRentH.count, " +
-                $"(additionalPayServise.price + typeOfHouse.price) * agreementOfRentH.count," +
+                $"agreementOfRentH.term, " +
+                $"(additionalPayServise.price + typeOfHouse.price) * agreementOfRentH.term," +
                 $"agreementOfRentH.paymentMethod " +
                 $"from agreementOfRentH " +
-                $"inner join AgreementADP on agreementOfRentH.agreementNum = AgreementADP.agreementNum  "+
-                $"inner join additionalPayServise on additionalPayServise.ADP_id = AgreementADP.ADP_id " +
+                $"inner join AdditionalPayServise on agreementOfRentH.ADP_id = AdditionalPayServise.ADP_id " +
                 $"inner join House on House.houseId = agreementOfRentH.houseId " +
                 $"inner join TypeOfHouse on TypeOfHouse.typeId = House.typeId ";
 

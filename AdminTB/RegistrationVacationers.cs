@@ -30,30 +30,30 @@ namespace AdminTB
 
             string queryRegistration = $"insert into tourist(secondName, firstName, phoneNum, passportNum, passportSeries) values ('{secondName}', '{firstName}', '{phoneNum}', '{pasNum}', '{pasSeries}')";
 
-            SqlCommand command = new SqlCommand(queryRegistration, database.GetConnection());
-
-            database.openConnection();
-
-            SqlDataAdapter adapter = new SqlDataAdapter();
-            DataTable dataTable = new DataTable();
-
-            adapter.SelectCommand = command;
-            adapter.Fill(dataTable);
-
-            if (command.ExecuteNonQuery() == 1)
+            if (secondName != "" && firstName != "" && phoneNum != "" && pasNum != "" && pasSeries != "")
             {
                 MessageBox.Show("Отдыхающий был успешно зарегестрирован!", "Успешно!", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                SurnameTextBox.Text = "";
-                FirstNameTextBox.Text = "";
-                PhoneTextBox.Text = "";
-                NumberPassportTextBox.Text = "";
-                SeriesPassportTextBox.Text = "";
 
+                SqlCommand command = new SqlCommand(queryRegistration, database.GetConnection());
+
+                database.openConnection();
+
+                SqlDataAdapter adapter = new SqlDataAdapter();
+                DataTable dataTable = new DataTable();
+
+                adapter.SelectCommand = command;
+                adapter.Fill(dataTable);
             }
             else
             {
                 MessageBox.Show("Отдыхающий не был зарегистрирован!", "Ошибка!", MessageBoxButtons.OK, MessageBoxIcon.Warning);
             }
+
+            SurnameTextBox.Text = "";
+            FirstNameTextBox.Text = "";
+            PhoneTextBox.Text = "";
+            NumberPassportTextBox.Text = "";
+            SeriesPassportTextBox.Text = "";
         }
     }
 }

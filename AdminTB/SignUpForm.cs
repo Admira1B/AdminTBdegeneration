@@ -46,15 +46,19 @@ namespace AdminTB
             var login = LogInTextBox.Text;
             var password = PasswordTextBox.Text;
 
-            string queryRegistration = $"insert into auntification(login_user, password_user) values('{login}','{password}')";
+            SqlDataAdapter adapter = new SqlDataAdapter();
+            DataTable dataTable = new DataTable();
 
-            SqlCommand command = new SqlCommand(queryRegistration, database.GetConnection());
-
-            database.openConnection();
-
-            if (command.ExecuteNonQuery() == 1)
+            if ((login != "" && password != "") && Checkuser())
             {
+                string queryRegistration = $"insert into auntification(login_user, password_user) values('{login}','{password}')";
+                SqlCommand command = new SqlCommand(queryRegistration, database.GetConnection());
+
+                adapter.SelectCommand = command;
+                adapter.Fill(dataTable);
+
                 MessageBox.Show("Вы были успешно зарегестрированы!", "Успешно!", MessageBoxButtons.OK, MessageBoxIcon.Information);
+
                 LoginForm loginForm = new LoginForm();
                 this.Hide();
                 loginForm.ShowDialog();
@@ -65,29 +69,27 @@ namespace AdminTB
             }
         }
 
-        private Boolean checkuser()
+        private Boolean Checkuser()
         {
-            var loginUser = LogInTextBox.Text;
-            var passUser = PasswordTextBox.Text;
-
             SqlDataAdapter adapter = new SqlDataAdapter();
             DataTable dataTable = new DataTable();
 
-            string queryCheck = $"select * from auntification where login_user = '{loginUser}' and password_user = '{passUser}'";
+            var login_user = LogInTextBox.Text;
 
-            SqlCommand command = new SqlCommand(queryCheck, database.GetConnection());
+            string queryCheck = $"select login_user from auntification where login_user = '{login_user}'";
+            SqlCommand commandCheck = new SqlCommand(queryCheck, database.GetConnection());
 
-            adapter.SelectCommand = command;
+            adapter.SelectCommand = commandCheck;
             adapter.Fill(dataTable);
 
             if (dataTable.Rows.Count > 0)
             {
                 MessageBox.Show("Пользователь уже существует!", "Ошибка!", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-                return true;
+                return false;
             }
             else
             {
-                return false;
+                return true;
             }
         }
 
