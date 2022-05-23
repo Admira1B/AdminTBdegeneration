@@ -72,6 +72,12 @@
     <Compile Include="ListHouses.Designer.cs">
       <DependentUpon>ListHouses.cs</DependentUpon>
     </Compile>
+    <Compile Include="ListReportBook.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ListReportBook.Designer.cs">
+      <DependentUpon>ListReportBook.cs</DependentUpon>
+    </Compile>
     <Compile Include="ListServices.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -127,6 +133,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="ListHouses.resx">
       <DependentUpon>ListHouses.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ListReportBook.resx">
+      <DependentUpon>ListReportBook.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="ListServices.resx">
       <DependentUpon>ListServices.cs</DependentUpon>

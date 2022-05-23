@@ -93,5 +93,12 @@ namespace AdminTB
             MainPanel.Controls.Clear();
             MainPanel.Controls.Add(registrationvacationerspanel);
         }
+
+        private void книгаЖалобToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+           ListReportBook listReportbookpanel = new ListReportBook();
+            MainPanel.Controls.Clear();
+            MainPanel.Controls.Add(listReportbookpanel);
+        }
     }
 }

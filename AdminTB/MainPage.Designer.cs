@@ -36,6 +36,7 @@
             this.отдыхающиеToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.списокToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.добавитьToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.книгаЖалобToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.домаToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.экскурсииToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.дополнительныеУслугиToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -74,14 +75,14 @@
             // списокToolStripMenuItem
             // 
             this.списокToolStripMenuItem.Name = "списокToolStripMenuItem";
-            this.списокToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.списокToolStripMenuItem.Size = new System.Drawing.Size(133, 22);
             this.списокToolStripMenuItem.Text = "Список";
             this.списокToolStripMenuItem.Click += new System.EventHandler(this.списокToolStripMenuItem_Click);
             // 
             // оформитьToolStripMenuItem
             // 
             this.оформитьToolStripMenuItem.Name = "оформитьToolStripMenuItem";
-            this.оформитьToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.оформитьToolStripMenuItem.Size = new System.Drawing.Size(133, 22);
             this.оформитьToolStripMenuItem.Text = "Оформить";
             this.оформитьToolStripMenuItem.Click += new System.EventHandler(this.оформитьToolStripMenuItem_Click);
             // 
@@ -89,7 +90,8 @@
             // 
             this.отдыхающиеToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.списокToolStripMenuItem1,
-            this.добавитьToolStripMenuItem});
+            this.добавитьToolStripMenuItem,
+            this.книгаЖалобToolStripMenuItem});
             this.отдыхающиеToolStripMenuItem.Name = "отдыхающиеToolStripMenuItem";
             this.отдыхающиеToolStripMenuItem.Size = new System.Drawing.Size(94, 20);
             this.отдыхающиеToolStripMenuItem.Text = "Отдыхающие";
@@ -107,6 +109,13 @@
             this.добавитьToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.добавитьToolStripMenuItem.Text = "Добавить";
             this.добавитьToolStripMenuItem.Click += new System.EventHandler(this.добавитьToolStripMenuItem_Click);
+            // 
+            // книгаЖалобToolStripMenuItem
+            // 
+            this.книгаЖалобToolStripMenuItem.Name = "книгаЖалобToolStripMenuItem";
+            this.книгаЖалобToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.книгаЖалобToolStripMenuItem.Text = "Книга жалоб";
+            this.книгаЖалобToolStripMenuItem.Click += new System.EventHandler(this.книгаЖалобToolStripMenuItem_Click);
             // 
             // домаToolStripMenuItem
             // 
@@ -139,7 +148,7 @@
             // MainPanel
             // 
             this.MainPanel.Location = new System.Drawing.Point(0, 25);
-            this.MainPanel.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.MainPanel.Margin = new System.Windows.Forms.Padding(2);
             this.MainPanel.Name = "MainPanel";
             this.MainPanel.Size = new System.Drawing.Size(600, 331);
             this.MainPanel.TabIndex = 2;
@@ -170,7 +179,7 @@
             this.Controls.Add(this.MainMenu);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "MainPage";
             this.Text = "AdminTB";
             this.MouseDown += new System.Windows.Forms.MouseEventHandler(this.MainPage_MouseDown);
@@ -197,5 +206,6 @@
         private System.Windows.Forms.ToolStripMenuItem сотрудникиToolStripMenuItem;
         private System.Windows.Forms.Panel MainPanel;
         private System.Windows.Forms.LinkLabel CloseButtonLinkLabel;
+        private System.Windows.Forms.ToolStripMenuItem книгаЖалобToolStripMenuItem;
     }
 }

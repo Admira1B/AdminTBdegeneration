@@ -141,3 +141,4 @@ C:\Users\reyzenbuk.105s1.STUD\Desktop\АdminTB\AdminTB\obj\Debug\AdminTB.csproj.
 C:\Users\reyzenbuk.105s1.STUD\Desktop\АdminTB\AdminTB\obj\Debug\AdminTB.csproj.CoreCompileInputs.cache
 C:\Users\reyzenbuk.105s1.STUD\Desktop\АdminTB\AdminTB\obj\Debug\AdminTB.exe
 C:\Users\reyzenbuk.105s1.STUD\Desktop\АdminTB\AdminTB\obj\Debug\AdminTB.pdb
+C:\Users\reyzenbuk.105s1.STUD\Desktop\АdminTB\AdminTB\obj\Debug\AdminTB.ListReportBook.resources

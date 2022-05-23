@@ -1,6 +1,7 @@
-﻿namespace AdminTB
+﻿
+namespace AdminTB
 {
-    partial class ListContarcts
+    partial class ListReportBook
     {
         /// <summary> 
         /// Обязательная переменная конструктора.
@@ -28,37 +29,32 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.DataGridContracts = new System.Windows.Forms.DataGridView();
-            ((System.ComponentModel.ISupportInitialize)(this.DataGridContracts)).BeginInit();
+            this.ReportBookDataGrid = new System.Windows.Forms.DataGridView();
+            ((System.ComponentModel.ISupportInitialize)(this.ReportBookDataGrid)).BeginInit();
             this.SuspendLayout();
             // 
-            // DataGridContracts
+            // ReportBookDataGrid
             // 
-            this.DataGridContracts.AllowUserToAddRows = false;
-            this.DataGridContracts.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.DataGridContracts.Location = new System.Drawing.Point(0, 0);
-            this.DataGridContracts.Margin = new System.Windows.Forms.Padding(2);
-            this.DataGridContracts.Name = "DataGridContracts";
-            this.DataGridContracts.RowHeadersWidth = 51;
-            this.DataGridContracts.RowTemplate.Height = 24;
-            this.DataGridContracts.Size = new System.Drawing.Size(600, 331);
-            this.DataGridContracts.TabIndex = 1;
+            this.ReportBookDataGrid.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.ReportBookDataGrid.Location = new System.Drawing.Point(0, 0);
+            this.ReportBookDataGrid.Name = "ReportBookDataGrid";
+            this.ReportBookDataGrid.Size = new System.Drawing.Size(600, 331);
+            this.ReportBookDataGrid.TabIndex = 0;
             // 
-            // ListContarcts
+            // ListReportBook
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.Controls.Add(this.DataGridContracts);
-            this.Margin = new System.Windows.Forms.Padding(2);
-            this.Name = "ListContarcts";
+            this.Controls.Add(this.ReportBookDataGrid);
+            this.Name = "ListReportBook";
             this.Size = new System.Drawing.Size(600, 331);
-            ((System.ComponentModel.ISupportInitialize)(this.DataGridContracts)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ReportBookDataGrid)).EndInit();
             this.ResumeLayout(false);
 
         }
 
         #endregion
 
-        private System.Windows.Forms.DataGridView DataGridContracts;
+        private System.Windows.Forms.DataGridView ReportBookDataGrid;
     }
 }
